@@ -3,6 +3,7 @@ require('dotenv').config()
 const express = require('express')
 const slimauth = require('slimauth')
 const expressLayouts = require('express-ejs-layouts')
+const firebase = require('firebase')
 const app = express()
 const port = 3000
 
@@ -20,17 +21,31 @@ slimauth.setOptions(
         'privateURLArray': [                        // An array of routes that require authorization
             '/pickup/pickups',
             '/auth/signup',
-            '/auth/changepassword'
+            '/auth/changepassword',
+            '/'
         ]
     })
 app.use(slimauth.requestAuthenticator)              // enables authentication handling
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: process.env.APIKEY,
+    authDomain: process.env.AUTHDOMAIN,
+    databaseURL: process.env.DATABASEURL,
+    projectId: "dsv-odense-pickup",
+    storageBucket: process.env.STORAGEBUCKET,
+    messagingSenderId: process.env.MESSAGINGSENDERID,
+    appId: process.env.APPID
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
 //Get Routes
 const authRoutes = require('./routes/auth')
 const pickupRoutes = require('./routes/pickup')
 
 app.get('/', (req, res) => {
-    res.render('auth/login')
+    res.render('home')
 })
 
 //use Routes

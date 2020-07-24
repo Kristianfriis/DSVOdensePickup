@@ -57,4 +57,7 @@ router.post('/signup', (req, res) => {
     }
 })
 
+router.get('/changepassword', (req, res) => {
+    res.render('auth/changepassword')
+})
 module.exports = router

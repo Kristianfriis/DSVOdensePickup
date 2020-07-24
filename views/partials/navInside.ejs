@@ -1,9 +1,25 @@
 <nav>
-    <ul style="list-style: none;">
-        <li class="home-btn" style="margin-bottom: 0;"><a href="/" style="font-weight: bold;">DSV Xpress</a></li>
-        <li style="margin-bottom: 0;"><a href="/"><i class="fa fa-home fa-lg"></i> Home</a></li>
-        <li style="margin-bottom: 0;"><a href="/pickup/pickups"><i class="fa fa-car fa-lg"></i> Pickups</a></li>
-        <li style="margin-bottom: 0;"><a href="/auth/signup"><i class="fas fa-user-plus"></i>  Signup</a></li>
-        <li style="margin-bottom: 0;"><a href="/auth/logout"><i class="fas fa-sign-in-alt" style="transform: rotate(180deg);"></i>  Sign Out</a></li>
+    <ul style="list-style: none; display: flex;">
+            <li class="home-btn" style="margin-bottom: 0;"><a href="/" style="font-weight: bold;">DSV Xpress</a></li>
+            <li style="margin-bottom: 0;"><a href="/"><i class="fa fa-home fa-lg"></i> Home</a></li>
+            <div>
+                <li style="margin-bottom: 0;" class="dropdown">
+                    <a class="dropbtn"><i class="fa fa-car fa-lg"></i> Pickups</a>
+                    <div class="dropdown-content">
+                        <a href="/pickup/pickups" style="text-align: left;"><i class="fa fa-car fa-lg"></i> Pickups</a>
+                        <a href="/pickup/newpickup" style="text-align: left;"><i class="fa fa-car fa-lg"></i>+ New Pickup</a>
+                    </div>
+                </li>
+            </div>
+            <div>
+                <li style="margin-bottom: 0;" class="dropdown">
+                    <a class="dropbtn"><i class="fas fa-user-circle"></i> Account</a>
+                    <div class="dropdown-content">
+                        <a href="/auth/signup" style="text-align: left;"><i class="fas fa-user-plus"></i> New User</a>
+                        <a href="/auth/changepassword" style="text-align: left;"><i class="fas fa-key"></i> Change Password</a>
+                        <a href="/auth/logout" style="text-align: left;"><i class="fas fa-sign-in-alt" style="transform: rotate(180deg);"></i> Sign Out</a>
+                    </div>
+                </li>
+            </div>
     </ul>
 </nav>

@@ -11,10 +11,16 @@
         <th>Postal Code</th>
         <th>City</th>
         <th>Mon</th>
+        <th>Mon</th>
+        <th>Tue</th>
         <th>Tue</th>
         <th>Wed</th>
+        <th>Wed</th>
+        <th>Thu</th>
         <th>Thu</th>
         <th>Fri</th>
+        <th>Fri</th>
+        <th>Collies</th>
         <th>Weight</th>
     </tr>
     <% data.map((data) => { %>
@@ -23,11 +29,17 @@
             <td><%= data.address %></td>
             <td><%= data.postalcode %></td>
             <td><%= data.city %></td>
-            <td><%= data.mon %></td>
-            <td><%= data.tue %></td>
-            <td><%= data.wed %></td>
-            <td><%= data.thu %></td>
-            <td><%= data.fri %></td>
+            <td><%= data.mondayfrom %></td>
+            <td><%= data.mondayto %></td>
+            <td><%= data.tuesdayfrom %></td>
+            <td><%= data.tuesdayto %></td>
+            <td><%= data.wednesdayfrom %></td>
+            <td><%= data.wednesdayto %></td>
+            <td><%= data.thursdayfrom %></td>
+            <td><%= data.thursdayto %></td>
+            <td><%= data.fridayfrom %></td>
+            <td><%= data.fridayto %></td>
+            <td><%= data.collies %></td>
             <td><%= data.weight %></td>
         </tr>
     <% } )%> 
