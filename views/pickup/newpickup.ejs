@@ -33,81 +33,93 @@
     </div>
     <!-- Daily pick up times -->
     <div class="row">
-        <div class="row">
-            <div class="eleven columns" style="text-align: left;">
-                <label for="monday">Monday:</label>
-                <div class="two columns">
-                    <label>From:</label>
-                    <input class="u-full-width" type="text" id="monday" name="mondayfrom" placeholder="14:00">
+        <div style="display: flex; justify-content: center;">
+            <div>
+                <div class="eleven columns" style="text-align: left;">
+                    <label for="monday">Monday:</label>
+                    <div class="four columns">
+                        <label>From:</label>
+                        <input class="u-full-width" type="text" id="monday" name="mondayfrom" placeholder="14:00">
+                    </div>
+                    <div class="four columns">
+                        <label>To:</label>
+                        <input class="u-full-width" type="text" id="monday" name="mondayto" placeholder="15:00">
+                    </div>
                 </div>
-                <div class="two columns">
-                    <label>To:</label>
-                    <input class="u-full-width" type="text" id="monday" name="mondayto" placeholder="15:00">
+            </div>
+            <div>
+                <div class="eleven columns" style="text-align: left;">
+                    <label for="tuesday">Tuesday:</label>
+                    <div class="four columns">
+                        <label>From:</label>
+                        <input class="u-full-width" type="text" id="tuesday" name="tuesdayfrom" placeholder="14:00">
+                    </div>
+                    <div class="four columns">
+                        <label>To:</label>
+                        <input class="u-full-width" type="text" id="tuesday" name="tuesdayto" placeholder="15:00">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="eleven columns" style="text-align: left;">
+                    <label for="wednesday">Wednesday:</label>
+                    <div class="four columns">
+                        <label>From:</label>
+                        <input class="u-full-width" type="text" id="wednesday" name="wednesdayfrom" placeholder="14:00">
+                    </div>
+                    <div class="four columns">
+                        <label>To:</label>
+                        <input class="u-full-width" type="text" id="wednesday" name="wednesdayto" placeholder="15:00">
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="eleven columns" style="text-align: left;">
+                    <label for="thursday">Thursday:</label>
+                    <div class="four columns">
+                        <label>From:</label>
+                        <input class="u-full-width" type="text" id="thursday" name="thursdayfrom" placeholder="14:00">
+                    </div>
+                    <div class="four columns">
+                        <label>To:</label>
+                        <input class="u-full-width" type="text" id="thursday" name="thursdayto" placeholder="15:00">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="eleven columns" style="text-align: left;">
+                    <label for="friday">Friday:</label>
+                    <div class="four columns">
+                        <label>From:</label>
+                        <input class="u-full-width" type="text" id="friday" name="fridayfrom" placeholder="13:00">
+                    </div>
+                    <div class="four columns">
+                        <label>To:</label>
+                        <input class="u-full-width" type="text" id="friday" name="fridayto" placeholder="14:00">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="eleven columns" style="text-align: left;">
-                <label for="tuesday">Tuesday:</label>
-                <div class="two columns">
-                    <label>From:</label>
-                    <input class="u-full-width" type="text" id="tuesday" name="tuesdayfrom" placeholder="14:00">
+        
+        <div style="display: flex;">
+            <div>
+                <div class="four columns">
+                    <label for="collies">Collies:</label>
+                    <input class="u-full-width" type="number" id="collies" name="collies" placeholder="1">
                 </div>
-                <div class="two columns">
-                    <label>To:</label>
-                    <input class="u-full-width" type="text" id="tuesday" name="tuesdayto" placeholder="15:00">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="eleven columns" style="text-align: left;">
-                <label for="wednesday">Wednesday:</label>
-                <div class="two columns">
-                    <label>From:</label>
-                    <input class="u-full-width" type="text" id="wednesday" name="wednesdayfrom" placeholder="14:00">
-                </div>
-                <div class="two columns">
-                    <label>To:</label>
-                    <input class="u-full-width" type="text" id="wednesday" name="wednesdayto" placeholder="15:00">
+                <div class="four columns">
+                    <label for="weight">Weight:</label>
+                    <input class="u-full-width" type="number" id="weight" name="weight" placeholder="500">
                 </div>
             </div>
+        
+            
         </div>
-        <div class="row">
-            <div class="eleven columns" style="text-align: left;">
-                <label for="thursday">Thursday:</label>
-                <div class="two columns">
-                    <label>From:</label>
-                    <input class="u-full-width" type="text" id="thursday" name="thursdayfrom" placeholder="14:00">
-                </div>
-                <div class="two columns">
-                    <label>To:</label>
-                    <input class="u-full-width" type="text" id="thursday" name="thursdayto" placeholder="15:00">
-                </div>
-            </div>
+        <div style="display: flex;">
+            <input class="u-pull-left button-primary" type="submit" name="submit" id="">
         </div>
-        <div class="row">
-            <div class="eleven columns" style="text-align: left;">
-                <label for="friday">Friday:</label>
-                <div class="two columns">
-                    <label>From:</label>
-                    <input class="u-full-width" type="text" id="friday" name="fridayfrom" placeholder="13:00">
-                </div>
-                <div class="two columns">
-                    <label>To:</label>
-                    <input class="u-full-width" type="text" id="friday" name="fridayto" placeholder="14:00">
-                </div>
-            </div>
-        </div>
-    <div class="row">
-        <div class="two columns">
-            <label for="collies">Number of Collies:</label>
-            <input class="u-full-width" type="number" id="collies" name="collies" placeholder="1">
-        </div>
-        <div class="two columns">
-            <label for="weight">Weight:</label>
-            <input class="u-full-width" type="number" id="weight" name="weight" placeholder="500">
-        </div>
-    </div>
-
-    <input class="u-pull-left button-primary" type="submit" name="submit" id="">
+        
+        
+   
 </form>
