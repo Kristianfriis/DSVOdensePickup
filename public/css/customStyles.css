@@ -105,3 +105,12 @@ li a:hover {
   background-color: #000f27;
 }
 
+
+/*            pickup-times-cont                   */
+.pickup-times-cont {
+  width: 200px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  text-align: center;
+}
+

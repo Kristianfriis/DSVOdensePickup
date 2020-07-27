@@ -15,46 +15,83 @@
                 <p><%= data.city %></p>
                 <p><%= data.phone %></p>
             </div>
+            <div class="pickup-times u-pull-left" style="text-align: left; padding: 5px; width: 70%;" >
+                <h6 style="border-bottom: 1px solid lightgray;">Pickup times:</h6>
+                <div style="display: flex; justify-content: space-evenly;">
+                    <div class="pickup-times-cont">
+                        <p><strong>Monday</strong></p>
+                        <div style="display: flex; justify-content: space-evenly;">
+                            <div>
+                                <p>From:</p>
+                                <p><%= data.mondayfrom %></p>
+                            </div>
+                            <div>
+                                <p>To:</p>
+                                <p><%= data.mondayto %></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pickup-times-cont">
+                        <p><strong>Tuesday</strong></p>
+                        <div style="display: flex; justify-content: space-evenly;">
+                            <div>
+                                <p>From:</p>
+                                <p><%= data.tuesdayfrom %></p>
+                            </div>
+                            <div>
+                                <p>To:</p>
+                                <p><%= data.tuesdayto %></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pickup-times-cont">
+                        <p><strong>Wednesday</strong></p>
+                        <div style="display: flex; justify-content: space-evenly;">
+                            <div>
+                                <p>From:</p>
+                                <p><%= data.wednesdayfrom %></p>
+                            </div>
+                            <div>
+                                <p>To:</p>
+                                <p><%= data.wednesdayto %></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pickup-times-cont">
+                        <p><strong>Thursday</strong></p>
+                        <div style="display: flex; justify-content: space-evenly;">
+                            <div>
+                                <p>From:</p>
+                                <p><%= data.thursdayfrom %></p>
+                            </div>
+                            <div>
+                                <p>To:</p>
+                                <p><%= data.thursdayto %></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pickup-times-cont">
+                        <p><strong>Friday</strong></p>
+                        <div style="display: flex; justify-content: space-evenly;">
+                            <div>
+                                <p>From:</p>
+                                <p><%= data.fridayfrom %></p>
+                            </div>
+                            <div>
+                                <p>To:</p>
+                                <p><%= data.fridayto %></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="address u-pull-left" style="text-align: left; padding: 5px; width: 200px; border-left: 1px solid lightgray">
+                <h6 style="border-bottom: 1px solid lightgray;">Actions:</h6>
+                <div style="display: flex; flex-direction: column; justify-content: space-evenly; height: 195px;">
+                    <a class="button button-primary" href="#"><i class="fas fa-edit"></i> Edit</a>
+                    <a class="button button-primary delete" href="#"><i class="fas fa-trash"></i> Delete</a>
+                </div>
+            </div>
         </div>
     <% }) %>  
-<table style="width: 100%;">
-    <tr>
-        <th>Name</th>
-        <th>Address</th>
-        <th>Postal Code</th>
-        <th>City</th>
-        <th>Mon</th>
-        <th>Mon</th>
-        <th>Tue</th>
-        <th>Tue</th>
-        <th>Wed</th>
-        <th>Wed</th>
-        <th>Thu</th>
-        <th>Thu</th>
-        <th>Fri</th>
-        <th>Fri</th>
-        <th>Collies</th>
-        <th>Weight</th>
-    </tr>
-    <% data.map((data) => { %>
-        <tr>
-            <td><%= data.name %></td>
-            <td><%= data.address %></td>
-            <td><%= data.postalcode %></td>
-            <td><%= data.city %></td>
-            <td><%= data.mondayfrom %></td>
-            <td><%= data.mondayto %></td>
-            <td><%= data.tuesdayfrom %></td>
-            <td><%= data.tuesdayto %></td>
-            <td><%= data.wednesdayfrom %></td>
-            <td><%= data.wednesdayto %></td>
-            <td><%= data.thursdayfrom %></td>
-            <td><%= data.thursdayto %></td>
-            <td><%= data.fridayfrom %></td>
-            <td><%= data.fridayto %></td>
-            <td><%= data.collies %></td>
-            <td><%= data.weight %></td>
-        </tr>
-    <% } )%> 
-</table>
  
