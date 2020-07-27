@@ -4,6 +4,19 @@
 <%- contentFor('body') %> 
 <h2><i class="fa fa-car fa-lg"></i> Pickups</h2>
 <h4>Adresses:</h4>
+
+    <% data.map((data) => { %>
+        <div class="row" style="border: 1px solid lightgrey; border-radius: 5px; margin-bottom: 10px; box-shadow: 10px 10px 13px -9px rgba(0,0,0,0.75);">
+            <div class="address u-pull-left" style="text-align: left; border-right: 1px solid lightgray; padding: 5px; width: 200px">
+                <h6 style="border-bottom: 1px solid lightgray;">Address:</h6>
+                <p><strong><%= data.name %></strong></p>
+                <p><%= data.address %></p>
+                <p><%= data.postalcode %></p>
+                <p><%= data.city %></p>
+                <p><%= data.phone %></p>
+            </div>
+        </div>
+    <% }) %>  
 <table style="width: 100%;">
     <tr>
         <th>Name</th>

@@ -27,6 +27,7 @@ router.post('/newpickup', async (req, res) => {
             address: req.body.address,
             postalcode: req.body.postalcode,
             city: req.body.city,
+            phone: req.body.phone,
             mondayfrom: req.body.mondayfrom,
             mondayto: req.body.mondayto,
             tuesdayfrom: req.body.tuesdayfrom,

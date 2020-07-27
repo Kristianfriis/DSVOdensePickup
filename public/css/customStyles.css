@@ -72,3 +72,36 @@ li a:hover {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #000f27;}
+
+
+
+/*Home styles*/
+.flex-cont {
+  display: flex;
+  justify-content: space-evenly;
+}
+.home-card {
+  width: 200px;
+  height: 200px;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.home-card span {
+  width: 70%;
+  margin: auto;
+}
+.home-card a {
+  margin: auto;
+  padding: 20px;
+  text-decoration: none;
+  background-color: #002664;
+  border-radius: 5px;
+  color: white;
+}
+
+.home-card a:hover {
+  background-color: #000f27;
+}
+

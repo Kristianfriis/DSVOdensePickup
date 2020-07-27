@@ -4,4 +4,22 @@
 <%- contentFor('body') %>
 <div>
     <h1><i class="fa fa-home fa-lg"></i> Home</h1>
+    <h3>Welcome, what do you wish to do?</h3>
+    <div class="container">
+        <div class="flex-cont">
+            <div class="home-card">
+                <span>View Pickups?</span>
+                <a href="/pickup/pickups"><i class="fa fa-car fa-lg"></i> View Pickup</a>
+            </div>
+            <div class="home-card">
+                <span>Add a Pickup?</span>
+                <a href="/pickup/newpickup"><i class="fa fa-car fa-lg"></i>+ New Pickup</a>
+            </div>
+            <div class="home-card">
+                <span>Add a User?</span>
+                <a href="/auth/signup"><i class="fas fa-user-plus"></i> New User</a>
+            </div>
+        </div>
+
+    </div>
 </div>
