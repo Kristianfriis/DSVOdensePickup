@@ -26,7 +26,7 @@ router.post('/login', (req, res) => {
         .then(
             // success
             () => {
-                res.redirect('/pickup/pickups')
+                res.redirect('/')
                 // console.log('User logged in:', email)
             },
             // fail
