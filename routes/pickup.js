@@ -9,6 +9,7 @@ router.get('/pickups', async (req, res) => {
     let compiledData = [];
     const snapshot = await db.collection('test').get();
     snapshot.forEach((doc) => {
+        let pickup = 
         compiledData.push(doc.data())
     });
     console.log(compiledData)
