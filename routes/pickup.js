@@ -11,11 +11,16 @@ router.get('/pickups', async (req, res) => {
     snapshot.forEach((doc) => {
         compiledData.push(doc.data())
     });
+    console.log(compiledData)
     res.render('pickup/pickups', { data: compiledData })
 })
 
 router.get('/newpickup', (req, res) => {
     res.render('pickup/newpickup')
+})
+
+router.get('/editpickup/:id', (req, res) => {
+    res.render('pickup/editPickup')
 })
 
 router.post('/newpickup', async (req, res) => {

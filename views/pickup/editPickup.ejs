@@ -1,0 +1,125 @@
+<%- contentFor('header') %> 
+<%- include('../partials/navInside') %> 
+
+<%- contentFor('body') %>
+<h2><i class="fas fa-edit"></i><i class="fa fa-car fa-lg"></i> Edit Pickup</h2>
+
+<form action="/pickup/newpickup" method="POST">
+    <div class="row">
+        <div class="six columns">
+            <label for="name" style="text-align: left;">Name:</label>
+            <input class="u-full-width" type="text" id="name" name="name" placeholder="Firma A/S">
+        </div>
+        <div class="six columns">
+            <label for="address" style="text-align: left;">Address:</label>
+            <input class="u-full-width" type="text" id="address" name="address" placeholder="Address 123">
+        </div>
+    </div>
+    <div class="row">
+        <div class="six columns">
+            <label for="postalcode" style="text-align: left;">Postal Code:</label>
+            <input class="u-full-width" type="text" id="postalcode" name="postalcode" placeholder="5250">
+        </div>
+        <div class="six columns">
+            <label for="city" style="text-align: left;">City:</label>
+            <input class="u-full-width" type="text" id="city" name="city" placeholder="Odense">
+        </div>
+    </div>
+    <div class="row">
+        <div class="six columns">
+            <label for="phone" style="text-align: left;">Phone Number:</label>
+            <input class="u-full-width" type="tel" id="phone" name="phone" placeholder="+45 12 34 56 78">
+        </div>
+    </div>
+    <!-- Daily pick up times -->
+    <div class="row">
+        <div style="display: flex; justify-content: center;">
+            <div>
+                <div class="eleven columns" style="text-align: left;">
+                    <label for="monday">Monday:</label>
+                    <div class="four columns">
+                        <label>From:</label>
+                        <input class="u-full-width" type="text" id="monday" name="mondayfrom" placeholder="14:00">
+                    </div>
+                    <div class="four columns">
+                        <label>To:</label>
+                        <input class="u-full-width" type="text" id="monday" name="mondayto" placeholder="15:00">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="eleven columns" style="text-align: left;">
+                    <label for="tuesday">Tuesday:</label>
+                    <div class="four columns">
+                        <label>From:</label>
+                        <input class="u-full-width" type="text" id="tuesday" name="tuesdayfrom" placeholder="14:00">
+                    </div>
+                    <div class="four columns">
+                        <label>To:</label>
+                        <input class="u-full-width" type="text" id="tuesday" name="tuesdayto" placeholder="15:00">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="eleven columns" style="text-align: left;">
+                    <label for="wednesday">Wednesday:</label>
+                    <div class="four columns">
+                        <label>From:</label>
+                        <input class="u-full-width" type="text" id="wednesday" name="wednesdayfrom" placeholder="14:00">
+                    </div>
+                    <div class="four columns">
+                        <label>To:</label>
+                        <input class="u-full-width" type="text" id="wednesday" name="wednesdayto" placeholder="15:00">
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="eleven columns" style="text-align: left;">
+                    <label for="thursday">Thursday:</label>
+                    <div class="four columns">
+                        <label>From:</label>
+                        <input class="u-full-width" type="text" id="thursday" name="thursdayfrom" placeholder="14:00">
+                    </div>
+                    <div class="four columns">
+                        <label>To:</label>
+                        <input class="u-full-width" type="text" id="thursday" name="thursdayto" placeholder="15:00">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="eleven columns" style="text-align: left;">
+                    <label for="friday">Friday:</label>
+                    <div class="four columns">
+                        <label>From:</label>
+                        <input class="u-full-width" type="text" id="friday" name="fridayfrom" placeholder="13:00">
+                    </div>
+                    <div class="four columns">
+                        <label>To:</label>
+                        <input class="u-full-width" type="text" id="friday" name="fridayto" placeholder="14:00">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="display: flex;">
+            <div>
+                <div class="four columns">
+                    <label for="collies">Collies:</label>
+                    <input class="u-full-width" type="number" id="collies" name="collies" placeholder="1">
+                </div>
+                <div class="four columns">
+                    <label for="weight">Weight:</label>
+                    <input class="u-full-width" type="number" id="weight" name="weight" placeholder="500">
+                </div>
+            </div>
+        
+            
+        </div>
+        <div style="display: flex;">
+            <input class="u-pull-left button-primary" type="submit" name="submit" id="">
+        </div>
+        
+        
+   
+</form>

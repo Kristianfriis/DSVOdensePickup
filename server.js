@@ -1,6 +1,7 @@
 require('dotenv').config()
 //Require statements
 const express = require('express')
+const methodOverride = require('method-override')
 const slimauth = require('slimauth')
 const expressLayouts = require('express-ejs-layouts')
 const firebase = require('firebase')
@@ -10,6 +11,7 @@ const port = process.env.PORT || 3000
 app.set('view engine', 'ejs')
 
 //Use statements
+app.use(methodOverride('_method'))
 app.use(expressLayouts)
 app.use(express.static(__dirname + '/public'))
 app.use(express.urlencoded({ extended: true })) 
