@@ -9,10 +9,10 @@ router.get('/pickups', async (req, res) => {
     let compiledData = [];
     const snapshot = await db.collection('test').get();
     snapshot.forEach((doc) => {
-        let pickup = 
-        compiledData.push(doc.data())
+        let id = doc.id;
+        let data = doc.data()
+        compiledData.push({id, ...data})
     });
-    console.log(compiledData)
     res.render('pickup/pickups', { data: compiledData })
 })
 
@@ -20,15 +20,18 @@ router.get('/newpickup', (req, res) => {
     res.render('pickup/newpickup')
 })
 
-router.get('/editpickup/:id', (req, res) => {
-    res.render('pickup/editPickup')
+router.get('/editpickup/:id', async (req, res) => {
+    const adressRef = db.collection('test').doc(req.params.id)
+    const doc = await adressRef.get()
+    let id = doc.id;
+    let dataPackage = {id, ...doc.data()}
+    res.render('pickup/editPickup', {data : dataPackage})
 })
 
 router.post('/newpickup', async (req, res) => {
     try {
-        let docRef = req.body.name.toString().replace('A/S', "")
-        let fbDoc = db.collection('test').doc(docRef)  
-        await fbDoc.set({
+        let fbDoc = db.collection('test')
+        await fbDoc.add({
             name: req.body.name,
             address: req.body.address,
             postalcode: req.body.postalcode,

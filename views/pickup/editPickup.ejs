@@ -8,27 +8,27 @@
     <div class="row">
         <div class="six columns">
             <label for="name" style="text-align: left;">Name:</label>
-            <input class="u-full-width" type="text" id="name" name="name" placeholder="Firma A/S">
+            <input class="u-full-width" type="text" id="name" name="name" placeholder="Firma A/S" value="<%= data.name %> ">
         </div>
         <div class="six columns">
             <label for="address" style="text-align: left;">Address:</label>
-            <input class="u-full-width" type="text" id="address" name="address" placeholder="Address 123">
+            <input class="u-full-width" type="text" id="address" name="address" placeholder="Address 123" value="<%= data.address %> ">
         </div>
     </div>
     <div class="row">
         <div class="six columns">
             <label for="postalcode" style="text-align: left;">Postal Code:</label>
-            <input class="u-full-width" type="text" id="postalcode" name="postalcode" placeholder="5250">
+            <input class="u-full-width" type="text" id="postalcode" name="postalcode" placeholder="5250" value="<%= data.postalcode %> ">
         </div>
         <div class="six columns">
             <label for="city" style="text-align: left;">City:</label>
-            <input class="u-full-width" type="text" id="city" name="city" placeholder="Odense">
+            <input class="u-full-width" type="text" id="city" name="city" placeholder="Odense" value="<%= data.city %> ">
         </div>
     </div>
     <div class="row">
         <div class="six columns">
             <label for="phone" style="text-align: left;">Phone Number:</label>
-            <input class="u-full-width" type="tel" id="phone" name="phone" placeholder="+45 12 34 56 78">
+            <input class="u-full-width" type="tel" id="phone" name="phone" placeholder="+45 12 34 56 78" value="<%= data.phone %> ">
         </div>
     </div>
     <!-- Daily pick up times -->
@@ -39,11 +39,11 @@
                     <label for="monday">Monday:</label>
                     <div class="four columns">
                         <label>From:</label>
-                        <input class="u-full-width" type="text" id="monday" name="mondayfrom" placeholder="14:00">
+                        <input class="u-full-width" type="text" id="monday" name="mondayfrom" placeholder="14:00" value="<%= data.mondayfrom %> ">
                     </div>
                     <div class="four columns">
                         <label>To:</label>
-                        <input class="u-full-width" type="text" id="monday" name="mondayto" placeholder="15:00">
+                        <input class="u-full-width" type="text" id="monday" name="mondayto" placeholder="15:00" value="<%= data.mondayto %> ">
                     </div>
                 </div>
             </div>
@@ -52,11 +52,11 @@
                     <label for="tuesday">Tuesday:</label>
                     <div class="four columns">
                         <label>From:</label>
-                        <input class="u-full-width" type="text" id="tuesday" name="tuesdayfrom" placeholder="14:00">
+                        <input class="u-full-width" type="text" id="tuesday" name="tuesdayfrom" placeholder="14:00" value="<%= data.tuesdayfrom %> ">
                     </div>
                     <div class="four columns">
                         <label>To:</label>
-                        <input class="u-full-width" type="text" id="tuesday" name="tuesdayto" placeholder="15:00">
+                        <input class="u-full-width" type="text" id="tuesday" name="tuesdayto" placeholder="15:00" value="<%= data.tuesdayto %> ">
                     </div>
                 </div>
             </div>
@@ -65,11 +65,11 @@
                     <label for="wednesday">Wednesday:</label>
                     <div class="four columns">
                         <label>From:</label>
-                        <input class="u-full-width" type="text" id="wednesday" name="wednesdayfrom" placeholder="14:00">
+                        <input class="u-full-width" type="text" id="wednesday" name="wednesdayfrom" placeholder="14:00" value="<%= data.wednesdayfrom %> ">
                     </div>
                     <div class="four columns">
                         <label>To:</label>
-                        <input class="u-full-width" type="text" id="wednesday" name="wednesdayto" placeholder="15:00">
+                        <input class="u-full-width" type="text" id="wednesday" name="wednesdayto" placeholder="15:00" value="<%= data.wednesdayto %> ">
                     </div>
                 </div>
             </div>
@@ -79,11 +79,11 @@
                     <label for="thursday">Thursday:</label>
                     <div class="four columns">
                         <label>From:</label>
-                        <input class="u-full-width" type="text" id="thursday" name="thursdayfrom" placeholder="14:00">
+                        <input class="u-full-width" type="text" id="thursday" name="thursdayfrom" placeholder="14:00" value="<%= data.thursdayfrom %> ">
                     </div>
                     <div class="four columns">
                         <label>To:</label>
-                        <input class="u-full-width" type="text" id="thursday" name="thursdayto" placeholder="15:00">
+                        <input class="u-full-width" type="text" id="thursday" name="thursdayto" placeholder="15:00" value="<%= data.thursdayto %> ">
                     </div>
                 </div>
             </div>
@@ -92,11 +92,11 @@
                     <label for="friday">Friday:</label>
                     <div class="four columns">
                         <label>From:</label>
-                        <input class="u-full-width" type="text" id="friday" name="fridayfrom" placeholder="13:00">
+                        <input class="u-full-width" type="text" id="friday" name="fridayfrom" placeholder="13:00" value="<%= data.fridayfrom %> ">
                     </div>
                     <div class="four columns">
                         <label>To:</label>
-                        <input class="u-full-width" type="text" id="friday" name="fridayto" placeholder="14:00">
+                        <input class="u-full-width" type="text" id="friday" name="fridayto" placeholder="14:00" value="<%= data.fridayto %> ">
                     </div>
                 </div>
             </div>
@@ -106,18 +106,18 @@
             <div>
                 <div class="four columns">
                     <label for="collies">Collies:</label>
-                    <input class="u-full-width" type="number" id="collies" name="collies" placeholder="1">
+                    <input class="u-full-width" type="number" id="collies" name="collies" placeholder="1" value="<%= data.collies %> ">
                 </div>
                 <div class="four columns">
                     <label for="weight">Weight:</label>
-                    <input class="u-full-width" type="number" id="weight" name="weight" placeholder="500">
+                    <input class="u-full-width" type="number" id="weight" name="weight" placeholder="500" value="<%= data.weight %> ">
                 </div>
             </div>
         
             
         </div>
         <div style="display: flex;">
-            <input class="u-pull-left button-primary" type="submit" name="submit" id="">
+            <button class="u-pull-left button-primary" type="submit" name="submit">Update Pickup</button>
         </div>
         
         
